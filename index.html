@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="imges/portfolio.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- CSS Link -->
     <link rel="stylesheet" href="style/Wow-Animate/animate.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
@@ -18,6 +19,11 @@
 </head>
 
 <body>
+    <!-- loader -->
+    <div
+        class="loader-box position-fixed vh-100 w-100 top-0 bottom-0 start-0 end-0 d-flex justify-content-center align-items-center">
+        <span class="loader"></span>
+    </div>
     <!-- NavBar -->
     <nav class="navbar navbar-expand-lg bg-black navbar-dark" id="NavBar">
         <div class="container resize">
@@ -57,11 +63,11 @@
     <!-- End Nav -->
     <!-- Home Section -->
     <div data-bs-spy="scroll" data-bs-target="#NavBar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true"
-        tabindex="0" id="sectionCollaps" style="transition: all 0.3s;">
+        tabindex="0" id="sectionCollapse" style="transition: all 0.3s;">
         <section class="Home w-100 vh-100" id="Home">
             <div class="shadow w-100 vh-100">
                 <div class="position-absolute home-style">
-                    <h1 class="fs-1 w-100 text-center text-white ">
+                    <h1 class="fs-1 w-100 text-center text-white">
                         Hi , I'm Mohamed Mahmoud
                     </h1>
                     <h1 class="fs-1 w-100 text-center text-white">
@@ -79,7 +85,7 @@
         <hr />
         <!-- End Home -->
         <!-- About section -->
-        <section class="About" id="About">
+        <section class="About wow slideInRight" data-wow-duration="1s" data-wow-delay="0s" id="About">
             <div class="container py-5">
                 <div class="row">
                     <div class="col-md-6 m-auto overflow-hidden">
@@ -114,7 +120,8 @@
                                     Web
                                     Developer</span> I believe that my skills and experience make me a perfect fit for
                                 this
-                                role. I have a deep understanding of [HTML, CSS, JavaScript, jQuery, Bootstrap and much
+                                role. I have a deep understanding of [HTML, CSS, SASS, JavaScript, Type script, jQuery,
+                                Bootstrap and much
                                 knowledge about React JS ] and have demonstrated proficiency in delivering high-quality
                                 work
                                 in these areas. I hope to Take a look at my portfolio. I look forward to the possibility
@@ -143,7 +150,7 @@
                                     id="information">mm7996475@gmail.com</span></p>
                         </div>
                         <div class="continer button-container">
-                            <a href="path/to/file.pdf" download>
+                            <a href="" id="download-link" download>
                                 <button class="download-button">Download CV</button>
                             </a>
                             <a href="#Contact">
@@ -170,55 +177,55 @@
                 <div class="progress-1 my-5">
                     <h5>HTML :</h5>
                     <div class="progress " role="progressbar" aria-label="Example with label">
-                        <div class="progress-bar" style="width: 98%">98%</div>
+                        <div class="progress-bar wow slideInLeft" style="width: 98%">98%</div>
                     </div>
                 </div>
                 <div class="progress-2 my-5">
                     <h5>CSS :</h5>
                     <div class="progress " role="progressbar" aria-label="Example with label">
-                        <div class="progress-bar" style="width: 95%">95%</div>
+                        <div class="progress-bar wow slideInLeft" style="width: 95%">95%</div>
                     </div>
                 </div>
                 <div class="progress-3 my-5">
                     <h5>JAVA-SCRIPT :</h5>
                     <div class="progress " role="progressbar" aria-label="Example with label">
-                        <div class="progress-bar" style="width: 85%">85%</div>
+                        <div class="progress-bar wow slideInLeft" style="width: 85%">85%</div>
                     </div>
                 </div>
                 <div class="progress-4 my-5">
                     <h5>TYPE-SCRIPT :</h5>
                     <div class="progress " role="progressbar" aria-label="Example with label">
-                        <div class="progress-bar" style="width: 80%">80%</div>
+                        <div class="progress-bar wow slideInLeft" style="width: 80%">80%</div>
                     </div>
                 </div>
                 <div class="progress-5 my-5">
                     <h5>BOOTSTRAP :</h5>
                     <div class="progress " role="progressbar" aria-label="Example with label">
-                        <div class="progress-bar" style="width: 95%">95%</div>
+                        <div class="progress-bar wow slideInLeft" style="width: 95%">95%</div>
                     </div>
                 </div>
                 <div class="progress-6 my-5">
                     <h5>SASS :</h5>
                     <div class="progress " role="progressbar" aria-label="Example with label">
-                        <div class="progress-bar" style="width: 85%">85%</div>
+                        <div class="progress-bar wow slideInLeft" style="width: 85%">85%</div>
                     </div>
                 </div>
                 <div class="progress-7 my-5">
                     <h5>Jquey :</h5>
                     <div class="progress " role="progressbar" aria-label="Example with label">
-                        <div class="progress-bar" style="width: 75%">75%</div>
+                        <div class="progress-bar wow slideInLeft" style="width: 75%">75%</div>
                     </div>
                 </div>
                 <div class="progress-8 my-5">
                     <h5>REACT :</h5>
                     <div class="progress " role="progressbar" aria-label="Example with label">
-                        <div class="progress-bar" style="width: 90%">90%</div>
+                        <div class="progress-bar wow slideInLeft" style="width: 90%">90%</div>
                     </div>
                 </div>
                 <div class="progress-9 my-5">
                     <h5>C++ :</h5>
                     <div class="progress " role="progressbar" aria-label="Example with label">
-                        <div class="progress-bar" style="width: 70%">70%</div>
+                        <div class="progress-bar wow slideInLeft" style="width: 70%">70%</div>
                     </div>
                 </div>
         </section>
@@ -235,65 +242,65 @@
                     </div>
                 </div>
                 <div class="row g-4 mt-5">
-                    <div class="col-md-4 rounded rounded-3">
-                        <div class="img-cover">
+                    <div class="col-md-4 rounded rounded-3 portfolio-item wow slideInLeft">
+                        <div class="img-cover" data-bs-toggle="modal" data-bs-target="#staticBackdrop" data-index="0">
                             <img src="./imges/projects/Ecommerce.png" alt="Portfolio-Project"
                                 class="w-100 pointer-event rounded-3 border border-dark border-2">
                         </div>
                         <h3 class="w-100 text-center my-2 main-color text-shadow">E-commerce App</h3>
                     </div>
-                    <div class="col-md-4 rounded rounded-3">
-                        <div class="img-cover">
+                    <div class="col-md-4 rounded rounded-3 portfolio-item wow slideInLeft">
+                        <div class="img-cover" data-bs-toggle="modal" data-bs-target="#staticBackdrop" data-index="1">
                             <img src="./imges/projects/Temperatures.png" alt="Portfolio-Project"
                                 class="w-100 pointer-event rounded-3 border border-dark border-2">
                         </div>
                         <h3 class="w-100 text-center my-2 main-color text-shadow">Temperatures</h3>
                     </div>
-                    <div class="col-md-4 rounded rounded-3">
-                        <div class="img-cover">
+                    <div class="col-md-4 rounded rounded-3 portfolio-item wow slideInLeft">
+                        <div class="img-cover" data-bs-toggle="modal" data-bs-target="#staticBackdrop" data-index="2">
                             <img src="./imges/projects/yemi-food.png" alt="Portfolio-Project"
                                 class="w-100 pointer-event rounded-3 border border-dark border-2">
                         </div>
                         <h3 class="w-100 text-center my-2 main-color text-shadow">Food Varieties</h3>
 
                     </div>
-                    <div class="col-md-4 rounded rounded-3">
-                        <div class="img-cover">
+                    <div class="col-md-4 rounded rounded-3 portfolio-item wow slideInRight">
+                        <div class="img-cover" data-bs-toggle="modal" data-bs-target="#staticBackdrop" data-index="3">
                             <img src="./imges/projects/Pharmacy system.png" alt="Portfolio-Project"
                                 class="w-100 pointer-event rounded-3 border border-dark border-2">
                         </div>
                         <h3 class="w-100 text-center my-2 main-color text-shadow">Pharmacy system</h3>
                     </div>
-                    <div class="col-md-4 rounded rounded-3">
-                        <div class="img-cover">
+                    <div class="col-md-4 rounded rounded-3 portfolio-item wow slideInRight">
+                        <div class="img-cover" data-bs-toggle="modal" data-bs-target="#staticBackdrop" data-index="4">
                             <img src="./imges/projects/Book-liberary.png" alt="Portfolio-Project"
                                 class="w-100 pointer-event rounded-3 border border-dark border-2">
                         </div>
                         <h3 class="w-100 text-center my-2 main-color text-shadow">Book library</h3>
                     </div>
-                    <div class="col-md-4 rounded rounded-3">
-                        <div class="img-cover">
+                    <div class="col-md-4 rounded rounded-3 portfolio-item wow slideInRight">
+                        <div class="img-cover" data-bs-toggle="modal" data-bs-target="#staticBackdrop" data-index="5">
                             <img src="./imges/projects/car-show.png" alt="Portfolio-Project"
                                 class="w-100 pointer-event rounded-3 border border-dark border-2">
                         </div>
                         <h3 class="w-100 text-center my-2 main-color text-shadow">Car Show</h3>
                     </div>
-                    <div class="col-md-4 rounded rounded-3">
-                        <div class="img-cover">
+                    <div class="col-md-4 rounded rounded-3 portfolio-item wow slideInLeft">
+                        <div class="img-cover" data-bs-toggle="modal" data-bs-target="#staticBackdrop" data-index="6">
                             <img src="./imges/projects/smart-login.png" alt="Portfolio-Project"
                                 class="w-100 pointer-event rounded-3 border border-dark border-2">
                         </div>
                         <h3 class="w-100 text-center my-2 main-color text-shadow">Smart login</h3>
                     </div>
-                    <div class="col-md-4 rounded rounded-3">
-                        <div class="img-cover">
+                    <div class="col-md-4 rounded rounded-3 portfolio-item wow slideInLeft">
+                        <div class="img-cover" data-bs-toggle="modal" data-bs-target="#staticBackdrop" data-index="7">
                             <img src="./imges/projects/Bekery.png" alt="Portfolio-Project"
                                 class="w-100 pointer-event rounded-3 border border-dark border-2">
                         </div>
                         <h3 class="w-100 text-center my-2 main-color text-shadow">Bakery</h3>
                     </div>
-                    <div class="col-md-4 rounded rounded-3">
-                        <div class="img-cover">
+                    <div class="col-md-4 rounded rounded-3 portfolio-item wow slideInLeft">
+                        <div class="img-cover" data-bs-toggle="modal" data-bs-target="#staticBackdrop" data-index="8">
                             <img src="./imges/projects/Resturant.png" alt="Portfolio-Project"
                                 class="w-100 pointer-event rounded-3 border border-dark border-2">
                         </div>
@@ -302,6 +309,25 @@
                 </div>
             </div>
         </section>
+        <!-- Modal -->
+        <div class="modal fade modal-dialog-scrollable" id="staticBackdrop" data-bs-backdrop="static"
+            data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="false">
+            <div class="modal-dialog top-50 translate-middle-y">
+                <div class="modal-content text-dark" id="model-darkMood">
+                    <div class="modal-header">
+                        <h1 class="modal-title w-100 fs-5 text-center" id="staticBackdropLabel"></h1>
+                    </div>
+                    <div class="modal-body">
+                        <img src="" alt="" class="w-100" id="Model-Body">
+                        <p class="text-center w-100 mt-4" id="Model-details"></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <a href="" target="_blank" class="btn bg-main-color text-white" id="Model-href">Visit Site</a>
+                    </div>
+                </div>
+            </div>
+        </div>
         <hr />
         <!-- End Portfolio -->
         <!-- start Contact Us  -->
@@ -309,7 +335,7 @@
             <div class="container my-5">
                 <div class="row">
                     <div class="col-md-6 m-auto overflow-hidden">
-                        <h1 class="Contact-Header w-100 text-center">
+                        <h1 class="Contact-Header w-100 text-center animate__animated animate__jello" data-wow-duration="2s" data-wow-delay="5s">
                             Contact me
                         </h1>
                     </div>
