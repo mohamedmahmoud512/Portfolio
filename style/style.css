@@ -70,11 +70,11 @@
 }
 
 path {
-    transition: all 0.3s !important;
-    -webkit-transition: all 0.3s !important;
-    -moz-transition: all 0.3s !important;
-    -ms-transition: all 0.3s !important;
-    -o-transition: all 0.3s !important;
+    transition: all 0.7s !important;
+    -webkit-transition: all 0.7s !important;
+    -moz-transition: all 0.7s !important;
+    -ms-transition: all 0.7s !important;
+    -o-transition: all 0.7s !important;
 }
 
 path:hover {
